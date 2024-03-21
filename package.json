@@ -1,0 +1,14 @@
+{
+  "name": "onoria-consulting-website",
+  "version": "1.0.0",
+  "description": "Website for onoria consulting LLC",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "run-sass": "sass --watch scss/bootstrap.scss:css/bootstrap.css"
+  },
+  "author": "Gustavo Torres",
+  "license": "MIT"
+}
