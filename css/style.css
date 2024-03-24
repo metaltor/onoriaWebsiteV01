@@ -1237,3 +1237,15 @@
  .sobretodo{
     z-index: 10000;
  }
+
+
+ .subtitle-sm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sin-espacio-left{
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
