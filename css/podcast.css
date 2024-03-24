@@ -2,13 +2,23 @@
 body{
     max-width: 100vw;
 }
-.videos{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    }
-    
-    iframe{
-      padding: 1rem;
-    }
+
+iframe[src*="youtube.com"] { 
+  max-width:100%; 
+  height:auto; 
+  aspect-ratio:16/9; 
+}
+.video-responsive {
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	padding-top: 30px; /* Esta línea ofrece compatibilidad para IE6 y puede eliminarse */
+	position: relative;
+}
+.video-responsive iframe {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
