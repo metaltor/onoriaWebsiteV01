@@ -27,9 +27,72 @@
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+        <!-- modal Stylesheet -->
+        <link rel="stylesheet" href="css/modal.css">
     </head>
 
     <body>
+
+        <!-- modal tiempo de expiracion start -->
+        <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">¡Atención! </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <p>
+                            ¡Se acerca el último día para presentar tus impuestos!No dejes pasar esta oportunidad crucial para cumplir con tus obligaciones fiscales y evitar posibles penalidades... Solo te quedan:
+                        </p>
+                    </div>
+                    <div class="contenedor"> 
+                        <div class="contenido">
+                          <div class="contador">
+                            <div class="responsivo1">
+                              <div class="cartel">
+                              <div id="dias"></div>
+                              <div class="h3"><h3>Días</h3></div>
+                            </div>
+                              <div class="cartel">
+                              <div id="horas"></div>
+                              <div class="h3"><h3>Horas</h3></div>
+                            </div>
+                            </div>
+                            <div class="responsivo2">
+                            <div class="cartel">
+                              <div id="minutos"></div>
+                              <div class="h3"><h3>Minutos</h3></div>
+                            </div>
+                            <div class="cartel">
+                              <div id="segundos"></div>
+                              <div class="h3"><h3>Segundos</h3></div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <p>
+                            ¡Contáctanos ahora mismo y asegúrate de presentar tus impuestos a tiempo! No esperes hasta el último minuto. ¡Estamos aquí para ayudarte!
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <a href="https:www.google.com"><button type="button" class="btn btn-primary">Contactanos ahora</button></a>
+                </div>
+              </div>
+            </div>
+          </div>   
+
+        <!-- modal tiempo de expiracion end -->
+
+
 
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -304,7 +367,9 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-        
+        <!-- modal JavaScript code automatic -->
+        <script src="js/modal.js"></script>
+
     </body>
 
 </html>
