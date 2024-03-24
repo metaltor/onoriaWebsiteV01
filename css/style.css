@@ -573,8 +573,11 @@
         padding-left: 0 !important;
 
     }
+    .primero{
+        order: -1;
+    }
 }
-
+ 
 /*** About End ***/
 
 /*** Feature Start ***/
